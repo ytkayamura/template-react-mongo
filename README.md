@@ -1,5 +1,5 @@
 # template-react-express
-サーバサイドありのReact、Reduxを使ったごく簡単なアプリ/テンプレート。herokuへのデプロイに対応。
+サーバサイド、mongoありのReact、Reduxを使ったごく簡単なアプリ/テンプレート。herokuへのデプロイに対応。
 
 ## Install
 ```
@@ -8,6 +8,9 @@ $ yarn
 
 ## Debug
 以下、それぞれ別ターミナルで実行。
+```
+mongod
+```
 ```
 $ yarn build:dev:server
 ```
@@ -18,6 +21,9 @@ $ yarn start:dev:server
 $ yarn start:dev
 ```
 もしくは
+```
+mongod
+```
 ```
 $ yarn start:dev:server:babel
 ```
@@ -30,3 +36,6 @@ $ yarn start:dev
 ```
 $ yarn start
 ```
+
+## Heroku Deploy
+herokuアプリのアドオンにmLab MongoDBを追加してデプロイ。

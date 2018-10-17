@@ -7,6 +7,11 @@ const reducer = (state, action) => {
         ...state,
         hello: action.hello,
       };
+    case ActionTypes.LAST_PUSHED_DATE:
+      return {
+        ...state,
+        lastPushedDate: action.lastPushedDate,
+      };
     default:
       return state;
   }
